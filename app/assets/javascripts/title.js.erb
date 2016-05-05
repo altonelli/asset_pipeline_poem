@@ -1,0 +1,9 @@
+$(document).on('ready', function(){
+
+  $('body').append('<h1>Asset Pipeline Poem</h1>');
+  $('h1').on("click",function(){
+    console.log("TEST");
+    $('img').attr({ src: "<%= asset_path 'triathlon.jpg' %>"});
+  });
+
+});
